@@ -1,0 +1,41 @@
+section.shop.thin-content
+	div.container-fluid
+		div.row
+			h2.title.black.center.fz30.mt8.mb1 Пример списка товаров
+			p.label.roboto-light.center.mb4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quasi.
+			-
+				var goods = [
+					{
+						name: "Яблоко",
+						price: "95"
+					},{
+						name: "Груша",
+						price: "87"
+					},{
+						name: "Слива",
+						price: "90"
+					},{
+						name: "Вишня",
+						price: "85"
+					},{
+						name: "Виноград",
+						price: "104"
+					},{
+						name: "Черешня",
+						price: "95"
+					}
+				];
+			for val, index in goods
+				div.col-md-4.col-sm-4.mb3
+					div.item-card
+						div.image-wrap
+							a(href="product-page.html" title="Подробнее")
+								img(src="img/shop"+ (index+1) +".jpg" alt=val.name)
+						div.item-content
+							h4.sans-bold.fz20.mt1.mb1.ttu.center=val.name
+							p.price.center.roboto-light.mb1=val.price+' грн.'
+							button(type="button" class="btn add-to-card") 
+								i(class="fas fa-shopping-cart")
+								| Добавить в корзину 
+							button(type="button" class="add-to-list" title="В список желаний")
+								i(class="far fa-heart")

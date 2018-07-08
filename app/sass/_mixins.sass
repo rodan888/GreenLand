@@ -44,11 +44,15 @@
 
 @mixin colorSchema ($base, $second, $third)
 	%gradient
+		// background: $base
+		// background: -moz-linear-gradient(left, $base 0%, $second 100%)
+		// background: -webkit-linear-gradient(left, $base 0%, $second 100%)
+		// background: linear-gradient(to right, $base 0%, $second 100%)
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$base, endColorstr=$second,GradientType=1 )
 		background: $base
-		background: -moz-linear-gradient(left, $base 0%, $second 100%)
-		background: -webkit-linear-gradient(left, $base 0%, $second 100%)
-		background: linear-gradient(to right, $base 0%, $second 100%)
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$base, endColorstr=$second,GradientType=1 )
-
+		background: -moz-radial-gradient(center, ellipse cover, #93c9b1 0%, $base 100%)
+		background: -webkit-radial-gradient(center, ellipse cover, #93c9b1 0%,$base 100%)
+		background: radial-gradient(ellipse at center, #93c9b1 0%,$base 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#93c9b1', endColorstr=$base,GradientType=1 )
 	.gradient-bg
 		@extend %gradient

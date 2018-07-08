@@ -2,7 +2,7 @@
 <html lang="ru" class="no-js">
   <head>
     <meta charset="utf-8">
-    <title>TUI Framework</title>
+    <title>TUI framework</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width initial-scale=1 maximum-scale=1">
@@ -13,12 +13,131 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <main>
-      <div class="cont-wrap center"><img src="img/tui-logo.png" alt="TUI Framework" style="max-width:120px">
-        <h1 class="title roboto-light black">TUI Framework</h1>
-        <p class="subtitle text mb1">Minimal CSS framework for flat and clean designs</p><a href="elements.html" class="btn fool m5">Getting started</a><a href="https://github.com/rodan888/StartGulp" target="_blank" class="btn fool m5">Getting started</a>
-        <p class="label text mt1">Latest version 1.0.2</p>
+    <header>
+      <div id="nav" class="tab">
+        <div class="navigation base shadow-easee">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-2"><a href="/" class="logo"><img src="../img/green-land.png" alt="TUI framework"></a></div>
+              <div class="col-sm-10">
+                <nav class="right">
+                  <ul class="nav dib">
+                    <li><a href="home.html" class="active roboto-light">Главная</a></li>
+                    <li><a href="sets.html" class="roboto-light">Наборы</a></li>
+                    <li><a href="shop.html" class="roboto-light">Магазин</a></li>
+                    <li><a href="promotion.html" class="roboto-light">Акции</a></li>
+                    <li><a href="blog.html" class="roboto-light">Новости</a></li>
+                    <li><a href="delivery.html" class="roboto-light">Доставка</a></li>
+                    <li><a href="contacts.html" class="roboto-light">Контакты</a></li>
+                  </ul>
+                  <div class="user-card dib">
+                    <div class="user-info dib">
+                      <div class="img bdr50 dib"><img src="../img/seampl10.jpg" alt="user"></div>
+                      <div class="info-wrap dib">
+                        <p class="roboto-light fz15">Smith john</p>
+                        <p class="label fz10">Administrator</p>
+                      </div>
+                    </div>
+                    <div class="user-options dib">
+                      <button tupe="button" class="btn material"><i class="fas fa-cogs"></i></button>
+                      <button tupe="button" class="btn material"><i class="fas fa-sign-out-alt">								</i></button>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </header>
+    <main>
+      <section class="gradient-bg">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 preview">
+              <div class="big-photo-png"><img src="img/apple1.png" alt="apple"></div>
+              <div class="content-wrap">
+                <h1 class="sans-regular fz50 ttu mb1">Lorem ipsum dolor sit</h1>
+                <p class="roboto-light fz20">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil soluta magni, expedita tempore non autem.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="shop thin-content">
+        <div class="container-fluid">
+          <div class="row">
+            <h2 class="title black center fz30 mt8 mb1">Пример списка товаров</h2>
+            <p class="label roboto-light center mb4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, quasi.</p>
+            <div class="col-md-4 col-sm-4 mb3">
+              <div class="item-card">
+                <div class="image-wrap"><a href="product-page.html" title="Подробнее"><img src="img/shop1.jpg" alt="Яблоко"></a></div>
+                <div class="item-content">
+                  <h4 class="sans-bold fz20 mt1 mb1 ttu center">Яблоко</h4>
+                  <p class="price center roboto-light mb1">95 грн.</p>
+                  <button type="button" class="btn add-to-card"> <i class="fas fa-shopping-cart"></i>Добавить в корзину </button>
+                  <button type="button" title="В список желаний" class="add-to-list"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mb3">
+              <div class="item-card">
+                <div class="image-wrap"><a href="product-page.html" title="Подробнее"><img src="img/shop2.jpg" alt="Груша"></a></div>
+                <div class="item-content">
+                  <h4 class="sans-bold fz20 mt1 mb1 ttu center">Груша</h4>
+                  <p class="price center roboto-light mb1">87 грн.</p>
+                  <button type="button" class="btn add-to-card"> <i class="fas fa-shopping-cart"></i>Добавить в корзину </button>
+                  <button type="button" title="В список желаний" class="add-to-list"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mb3">
+              <div class="item-card">
+                <div class="image-wrap"><a href="product-page.html" title="Подробнее"><img src="img/shop3.jpg" alt="Слива"></a></div>
+                <div class="item-content">
+                  <h4 class="sans-bold fz20 mt1 mb1 ttu center">Слива</h4>
+                  <p class="price center roboto-light mb1">90 грн.</p>
+                  <button type="button" class="btn add-to-card"> <i class="fas fa-shopping-cart"></i>Добавить в корзину </button>
+                  <button type="button" title="В список желаний" class="add-to-list"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mb3">
+              <div class="item-card">
+                <div class="image-wrap"><a href="product-page.html" title="Подробнее"><img src="img/shop4.jpg" alt="Вишня"></a></div>
+                <div class="item-content">
+                  <h4 class="sans-bold fz20 mt1 mb1 ttu center">Вишня</h4>
+                  <p class="price center roboto-light mb1">85 грн.</p>
+                  <button type="button" class="btn add-to-card"> <i class="fas fa-shopping-cart"></i>Добавить в корзину </button>
+                  <button type="button" title="В список желаний" class="add-to-list"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mb3">
+              <div class="item-card">
+                <div class="image-wrap"><a href="product-page.html" title="Подробнее"><img src="img/shop5.jpg" alt="Виноград"></a></div>
+                <div class="item-content">
+                  <h4 class="sans-bold fz20 mt1 mb1 ttu center">Виноград</h4>
+                  <p class="price center roboto-light mb1">104 грн.</p>
+                  <button type="button" class="btn add-to-card"> <i class="fas fa-shopping-cart"></i>Добавить в корзину </button>
+                  <button type="button" title="В список желаний" class="add-to-list"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-4 mb3">
+              <div class="item-card">
+                <div class="image-wrap"><a href="product-page.html" title="Подробнее"><img src="img/shop6.jpg" alt="Черешня"></a></div>
+                <div class="item-content">
+                  <h4 class="sans-bold fz20 mt1 mb1 ttu center">Черешня</h4>
+                  <p class="price center roboto-light mb1">95 грн.</p>
+                  <button type="button" class="btn add-to-card"> <i class="fas fa-shopping-cart"></i>Добавить в корзину </button>
+                  <button type="button" title="В список желаний" class="add-to-list"><i class="far fa-heart"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!--[if lt IE 9]
     <script src="libs/html5shiv/es5-shim.min.js"></script>
