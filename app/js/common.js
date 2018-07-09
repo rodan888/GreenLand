@@ -112,6 +112,10 @@ $(function() {
 	$(document).ready(function(){
 		main.init();
 
+
+		var grid = $('.grid');
+    	grid.packery();
+    	grid.find('.blog-grid').hoverdir({hoverElem:'.site-descr'});
 		//Chrome Smooth Scroll
 		try {
 			$.browserSelector();
