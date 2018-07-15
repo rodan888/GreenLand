@@ -2,40 +2,38 @@ section.card-blog
 	div.container-fluid
 		div.row
 			div.col-md-12.clrp
-				h2.title-left Новое в блоге
-				div(id="da-thumbs" class="grid shema-blog da-thumbs" data-packery='{"itemSelector": ".blog-grid","gutter": 0}')
+				h2.title-left Категории
+				div(class="grid shema-blog" data-packery='{"itemSelector": ".blog-grid","gutter": 0}')
 					-
 						var blogList = [
 							{
 								title: "",
 								sub_title: "пошаговое руководство",
-								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/Lavender.jpg"
 							},{
 								title: "Подготовка к работе!",
 								sub_title: "Необзодимые плагины, и настройки.",
-								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
-							},{
-								title: "Векторные иконочные шрифты. Iconmoon",
-								sub_title: "Необзодимые плагины, и настройки.",
-								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/cat2.jpg"
 							},{
 								title: "Стартовая настройка Gulp",
 								sub_title: "пошаговое руководство",
-								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/cat3.jpg"						
 							},{
-								title: "Подготовка к работе!",
+								title: "Векторные иконочные шрифты. Iconmoon",
 								sub_title: "Необзодимые плагины, и настройки.",
-								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/cat2.jpg"
 							}
 						];
 					for blog, index in blogList
 						div.blog-grid
-							div.site-screen
-								div.image-wrap
-									img(src="img/shop"+(index+1)+".jpg" alt= blog.title)
-							div.site-descr
-								div.descr-wrap
-									span tsumbaluk.in.ua || 28.12.2016
-									h3.anim-title= blog.title
-									a(href="inner-blog.html" class="read-more")
-										i.fa.fa-long-arrow-right
+							div.image-wrap
+								img(src=blog.img alt= blog.title)
+							div.descr-wrap
+								span category
+								h3.anim-title= blog.title
+								a(href="inner-blog.html" class="read-more")
+									i.fa.fa-long-arrow-right
