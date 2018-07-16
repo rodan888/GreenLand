@@ -1,0 +1,34 @@
+section.blog
+	div.container
+		div.row
+			div.col-md-12.clrp
+				h2.title.black.center Блог
+				p.label.rboto-light.center Get started on your healthy adventure
+				div.blog-items
+					-
+						var blogList = [
+							{
+								title: "Подготовка к работе!",
+								sub_title: "Необзодимые плагины, и настройки.",
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/cat2.jpg"
+							},{
+								title: "Подготовка к работе!",
+								sub_title: "Необзодимые плагины, и настройки.",
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/cat2.jpg"
+							},{
+								title: "Подготовка к работе!",
+								sub_title: "Необзодимые плагины, и настройки.",
+								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
+								img: "img/cat2.jpg"							
+							}				
+						];
+					for blog, index in blogList
+						div.col-md-4.col-sm-4.col-xs-12
+							div.blog-img
+								img(src=blog.img alt= blog.title)
+							span.blog-category	  
+							h4.blog-title
+							p.blog-intro= blog.intoText
+							a(href="inner-blog.html" class="btn read-more") Читать

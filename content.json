@@ -1,12 +1,11 @@
 {
 	"index.html": {
-		"title": "TUI Framework",
-		"main-title": "TUI Framework",
+		"title": "Green Land",
+		"main-title": "Green Land",
 		"main-subtitle": "Minimal CSS framework for flat and clean designs",
 		"btn-started": "Getting started",
 		"btn-github": "View on GitHub",
 		"version": "Latest version 1.0.2",
-		"title": "TUI framework",
 		
 		"home": "Главная",
 		"sets": "Наборы",
@@ -17,7 +16,7 @@
 		"contacts": "Контакты"
 	},
 	"elements.html": {
-		"title": "TUI framework",
+		"title": "Green Land",
 		"home": "Главная",
 		"portfolio": "Portfolio",
 		"shop": "Shop",
