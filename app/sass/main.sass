@@ -128,7 +128,7 @@
 // categories
 .categories
 	padding-top: 50px
-	background: $lightBrown
+	background: #f0f2ef
 
 	.grid
 		height: 105vh!important
@@ -233,10 +233,98 @@
 
 // Blog
 .blog
-	padding: 60px 0	
+	padding: 70px 0
+
+	.label
+		margin-bottom: 40px
+	
+	.blog-item
+		text-align: center
+		@include transition(all 0.5s)
+		&:hover
+			box-shadow: 3px 3px 9px $blackLight
+			.blog-title a
+				color: $main
+			.btn
+				background-color: $second	
+		
+		.blog-descr
+			padding: 20px 10px 40px
+
+		.blog-category
+			a
+				color: $orange
+				text-transform: uppercase
+				font-size: 12px
+				line-height: 16px
+
+		.blog-title
+			margin-bottom: 10px
+			a
+				font-size: 20px
+				line-height: 28px
+				font-family: RobotoLight	
+
+		.blog-intro
+			margin-bottom: 25px
+			line-height: 20px
+			font-family: RobotoLight
+
+// into
+.intro
+	padding: 100px 0
+	text-align: center
+	background-image: url("../img/intro.jpg")
+	background-position: 50% 50%
+	background-repeat: no-repeat
+	.intro-img
+		margin-bottom: 30px
+		img
+			max-width: 200px
+	.title
+		margin-bottom: 20px
+		font-size: 50px	
+		line-height: 55px
+	.text
+		margin-bottom: 40px						
 
 
+// choice
+.choice
+	padding-top: 70px
+	.choice-wrap
+		padding-top: 70px
+	img
+		width: 100%
 
+	.choice-item
+		position: relative
+		display: inline-block
+		width: 49%
+		margin-bottom: 60px
+		.choice-icon
+			position: absolute
+			top: 50%
+			left: 0
+			margin-top: -20px
+			width: 45px
+			height: 45px
+			border-radius: 45px
+			background: $main
+			line-height: 45px
+			text-align: center
+			color: $white
+			font-size: 18px
+
+		.choice-descr
+			padding-left: 60px		
+		.choice-title
+			margin-bottom: 10px
+			font-size: 20px
+			color: $silver
+			font-family: RobotoLight
+		.choice-intro
+			font-size: 14px	
 
 
 

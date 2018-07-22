@@ -8,17 +8,20 @@ section.blog
 					-
 						var blogList = [
 							{
-								title: "Подготовка к работе!",
+								category: 'Сад',
+								title: "Как правильно ухаживать за садом",
 								sub_title: "Необзодимые плагины, и настройки.",
 								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
 								img: "img/cat2.jpg"
 							},{
-								title: "Подготовка к работе!",
+								category: 'Сад',
+								title: "Как правильно ухаживать за садом",
 								sub_title: "Необзодимые плагины, и настройки.",
 								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
 								img: "img/cat2.jpg"
 							},{
-								title: "Подготовка к работе!",
+								category: 'Сад',
+								title: "Как правильно ухаживать за садом",
 								sub_title: "Необзодимые плагины, и настройки.",
 								introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel.",
 								img: "img/cat2.jpg"							
@@ -26,9 +29,13 @@ section.blog
 						];
 					for blog, index in blogList
 						div.col-md-4.col-sm-4.col-xs-12
-							div.blog-img
-								img(src=blog.img alt= blog.title)
-							span.blog-category	  
-							h4.blog-title
-							p.blog-intro= blog.intoText
-							a(href="inner-blog.html" class="btn read-more") Читать
+							div.blog-item
+								.img-wrap
+									img(src=blog.img alt= blog.title)
+								.blog-descr
+									div.blog-category
+										a(herf="#" title=blog.title class="link")= blog.category
+									h4.blog-title
+										a(herf="#" title=blog.title class="link")= blog.title
+									p.blog-intro= blog.introtext
+									a(href="inner-blog.html" class="btn read-more") Читать

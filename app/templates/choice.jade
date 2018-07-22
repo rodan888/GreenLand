@@ -1,0 +1,38 @@
+section.choice
+	div.container
+		div.row
+			div.col-md-12.clrp
+				h2.title.black.center Почему вибирают GreenLand
+				p.label.rboto-light.center Предоставляем только качественний материал
+				div.choice-items
+					div.col-md-4.col-sm-4.col-xs-12
+						.choice-img
+							img(src="img/farmer.png")
+					div.choice-wrap.col-md-8.col-sm-8.col-xs-12
+						-
+							var choiceList = [
+								{
+									category: 'fa fa-leaf',
+									title: "Качество проверено",
+									introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								},{
+									category: 'fa fa-check',
+									title: "Качество проверено",
+									introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								},{
+									category: 'fa fa-truck',
+									title: "Качество проверено",
+									introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								},{
+									category: 'fa fa-calendar-alt',
+									title: "Качество проверено",
+									introtext: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, vel."
+								}				
+							];
+						for choice, index in choiceList
+							.choice-item
+								.choice-icon
+									i(class=choice.category)
+								.choice-descr
+									h4.choice-title= choice.title
+									p.choice-intro= choice.introtext
